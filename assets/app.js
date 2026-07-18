@@ -513,7 +513,7 @@
   const GH_REPO = "funtime-checker/funtime-checker.github.io";
   const dlBtn = document.getElementById("dlBtn");
   if (dlBtn) {
-    fetch("https://api.github.com/repos/" + GH_REPO + "/releases", {
+    fetch("https://api.github.com/repos/" + GH_REPO + "/releases/latest", {
       headers: { Accept: "application/vnd.github+json" },
     })
       .then((r) => (r.ok ? r.json() : null))
