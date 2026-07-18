@@ -510,7 +510,7 @@
      Как только в репозитории появляется релиз с .exe-ассетом,
      кнопка скачивания начинает вести прямо на файл, а версия,
      размер и счётчик скачиваний обновляются автоматически. */
-  const GH_REPO = "github.com/funtime-checker/funtime-checker.github.io";
+  const GH_REPO = "https://github.com/funtime-checker/funtime-checker.github.io/releases/";
   const dlBtn = document.getElementById("dlBtn");
   if (dlBtn) {
     fetch("https://api.github.com/repos/" + GH_REPO + "/releases/latest", {
